@@ -16,8 +16,6 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        // สร้างข้อมูล Customer 10 คน
-        Customer::factory(10)->create();
     
         // สร้างข้อมูล Product 20 ชิ้น
         Product::factory(20)->create();

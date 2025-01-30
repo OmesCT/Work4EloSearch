@@ -10,6 +10,6 @@ class Product extends Model
     protected $fillable = ['name', 'description', 'price', 'stock'];
     public function orderDetails()
     {
-        return $this->hasMany(OrderDetail::class);
+        return $this->hasMany(OrderDetail::class); // One product can have many order details
     }
 }

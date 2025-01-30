@@ -20,7 +20,7 @@ class ProductFactory extends Factory
         return [
             'name' => $this->faker->word(),
             'description' => $this->faker->sentence(),
-            'price' => $this->faker->randomFloat(2, 10, 1000),
-            'stock' => $this->faker->numberBetween(1, 100),        ];
+            'price' => $this->faker->randomFloat(2, 10, 1000), //เฟคข้อมูลที่มีทศนิยม 2 ตำแหน่ง ระหว่าง 10 ถึง 1000
+            'stock' => $this->faker->numberBetween(1, 100),      ];
     }
 }
